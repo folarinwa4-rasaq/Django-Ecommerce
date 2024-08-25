@@ -1,0 +1,106 @@
+{% extends 'comapp/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'comapp/images/banner/b1.jpg' %}" alt="img 1">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'comapp/images/banner/b2.jpg' %}" class="d-block w-100" alt="img 2">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'comapp/images/banner/b3.jpg' %}" class="d-block w-100" alt="img 3">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'comapp/images/banner/b4.jpg' %}" class="d-block w-100" alt="img 4">
+    </div>
+  </div>
+</div>
+{% endblock banner-slider %}
+
+{% block information %}
+<div class="container">
+  <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+    <h1>Products</h1>
+    <small>jkdjklckldklcakllllldujjcaljdnfhfjlgxf,fvcvuxfgjbdcwfnchsfb,sfglsd.fj.wfuwdofcne.fm,.fm.eriyue9c47ugcgmdgticomgc</small>
+  </div>
+</div>
+{% endblock information %}
+
+{% block main-content %}
+  <div class="container">
+    <h1>Dairy products</h1>
+    </br></br>
+    <div class="row container">
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+          <a href="{% url 'category' 'ML' %}">
+            <div class="goodnessseccont text-center">
+              <img src="{% static 'comapp/images/product/cow-milk.png' %}" class="img-responsive center-bolck" alt="">
+              <p class="mlkpro">Milk</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+        <div class="goodnesssec buttermilk curdbgpro">
+          <a href="{% url 'category' 'CR' %}">
+            <div class="goodnessseccont text-center">
+              <img src="{% static 'comapp/images/product/curd-total.png' %}" class="img-responsive center-bolck" alt="">
+              <p class="mlkpro">Curd</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+        <div class="goodnesssec buttermilk buttermilk">
+          <a href="{% url 'category' 'LS' %}">
+            <div class="goodnessseccont text-center">
+              <img src="{% static 'comapp/images/product/Kulfi.png' %}" class="img-responsive center-bolck" alt="">
+              <p class="mlkpro">Kulfi</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row container">
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+          <a href="{% url 'category' 'MS' %}">
+            <div class="goodnessseccont text-center">
+              <img src="{% static 'comapp/images/product/milk-shake-vanilla.png' %}" class="img-responsive center-bolck" alt="">
+              <p class="mlkpro">Milk-Shake</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+        <div class="goodnesssec buttermilk curdbgpro">
+          <a href="{% url 'category' 'LS' %}">
+            <div class="goodnessseccont text-center">
+              <img src="{% static 'comapp/images/product/sweet-lassi.png' %}" class="img-responsive center-bolck" alt="">
+              <p class="mlkpro">Lassi</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+        <div class="goodnesssec buttermilk buttermilk">
+          <a href="{% url 'category' 'GH' %}">
+            <div class="goodnessseccont text-center">
+              <img src="{% static 'comapp/images/product/cow-ghee.png' %}" class="img-responsive center-bolck" alt="">
+              <p class="mlkpro">Ghee</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  <div>
+{% endblock main-content %}
